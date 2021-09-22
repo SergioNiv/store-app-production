@@ -1,0 +1,38 @@
+.card {
+	background-color: #fff;
+	text-decoration: none;
+	color: $black;
+
+	.card__container-img {
+		width: 95%;
+		display: flex;
+		height: 28rem;
+		margin: 0 auto;
+
+		.card__img {
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+	.card__text {
+		width: 90%;
+		margin: 0 auto;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+
+		.card__name {
+			display: block;
+			font-size: 1.5rem;
+		}
+		.card__price {
+			margin-top: 1rem;
+			display: block;
+			font-size: 1.8rem;
+			font-weight: 600;
+		}
+		.card__shipping {
+			margin-top: 0.5rem;
+			display: block;
+		}
+	}
+}

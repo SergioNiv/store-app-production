@@ -1,0 +1,105 @@
+.search__alert {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+.grid {
+	display: grid;
+	min-height: 70vh;
+	padding: 10px;
+	grid-auto-rows: 40rem;
+	gap: 10px;
+	grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+}
+
+.list__pagination {
+	width: 100%;
+	margin: 1rem 0;
+	display: flex;
+	justify-content: center;
+
+	.list__pagination-container {
+		display: flex;
+		align-items: center;
+		height: 4rem;
+
+		.pagination__decrement {
+			font-size: 1.2rem;
+			font-weight: 700;
+			display: block;
+			cursor: pointer;
+
+			.fa-chevron-left {
+				margin-right: 1rem;
+			}
+		}
+		.pagination__container-block {
+			width: 15rem;
+			margin: 0 0.5rem;
+			display: flex;
+			justify-content: center;
+			height: 3rem;
+
+			.pagination__block {
+				border-radius: 4px;
+				width: 3rem;
+				margin: 0 0.5rem;
+				display: flex;
+				background-color: #fff;
+				font-size: 1.2rem;
+				justify-content: center;
+				align-items: center;
+				border: solid $black 0.1rem;
+				cursor: pointer;
+			}
+			.activate {
+				background-color: $red-off;
+				color: #fff;
+				border: none;
+			}
+		}
+		.pagination__increment {
+			font-size: 1.2rem;
+			font-weight: 700;
+			display: block;
+			cursor: pointer;
+
+			.fa-chevron-right {
+				margin-left: 1rem;
+			}
+		}
+	}
+}
+@media (min-width: 360px) {
+	.grid {
+		grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+	}
+}
+
+@media (min-width: 500px) {
+	.grid {
+		grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+	}
+}
+@media (min-width: 750px) {
+	.grid {
+		grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+	}
+}
+
+@media (min-width: 800px) {
+	.container__result-clothes {
+		display: flex;
+		width: 100%;
+		margin: 0 auto;
+		max-width: 1240px;
+	}
+	.container__grid_list {
+		width: 80%;
+	}
+}

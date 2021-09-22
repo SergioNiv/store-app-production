@@ -1,0 +1,208 @@
+.filter {
+	width: 100%;
+
+	.container__filter-sticky {
+		width: 100%;
+		display: flex;
+
+		.filter__type {
+			width: 50%;
+
+			.type__title-container {
+				width: 100%;
+				height: 4rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-top: 5px;
+				cursor: pointer;
+
+				.type__title {
+					width: 95%;
+					height: 95%;
+					background-color: chocolate;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					background-color: #ffff;
+					font-size: 1.2rem;
+
+					.fa-filter {
+						margin-right: 0.5rem;
+						font-size: 1rem;
+					}
+				}
+			}
+			.type__menu-black {
+				background-color: rgba(0, 0, 0, 0.3);
+				width: 100%;
+				position: fixed;
+				top: 0;
+				display: none;
+				cursor: pointer;
+				z-index: 50;
+
+				.type__menu {
+					width: 50%;
+					height: 100vh;
+					background-color: $white-off;
+					list-style: none;
+					overflow: hidden;
+					cursor: pointer;
+
+					.filter__details-container {
+						width: 100%;
+
+						.type__menu-link {
+							width: 100%;
+							display: block;
+							height: 3rem;
+							background-color: #ffff;
+							font-size: 1.4rem;
+							display: flex;
+							align-items: center;
+							padding-left: 1rem;
+							margin-bottom: 3px;
+							border-top: 3px solid $white-off;
+							border-bottom: 3px solid $white-off;
+						}
+						.type__submenu {
+							width: 100%;
+							list-style: none;
+							background-color: #ffff;
+							padding: 0;
+							margin: 0;
+
+							.type__submenu-link {
+								display: block;
+								width: 100%;
+								height: 3rem;
+								display: flex;
+								align-items: center;
+								font-size: 1.2rem;
+								padding-left: 3rem;
+								transition: all 0.3s;
+
+								&:hover {
+									background-color: $white-off;
+									font-weight: 700;
+									transition: all 0.3s;
+								}
+							}
+						}
+					}
+				}
+			}
+			.activeFilterType {
+				display: block;
+			}
+		}
+		.btn__back {
+			width: 100%;
+			height: 3rem;
+			background-color: #ffff;
+			font-size: 1.4rem;
+			display: flex;
+			align-items: center;
+			padding-left: 1rem;
+			margin-bottom: 3px;
+			border: 3px solid $white-off;
+			font-weight: 800;
+		}
+
+		.filter__order {
+			width: 50%;
+
+			.order__title-container {
+				width: 100%;
+				height: 4rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-top: 5px;
+				cursor: pointer;
+
+				.order__title {
+					width: 95%;
+					height: 95%;
+					background-color: chocolate;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					background-color: #ffff;
+					font-size: 1.2rem;
+
+					.fa-sort {
+						margin-right: 0.5rem;
+					}
+				}
+			}
+
+			.order__menu-black {
+				background-color: rgba(0, 0, 0, 0.3);
+				width: 100%;
+				position: fixed;
+				top: 0;
+				left: 0;
+				display: none;
+				justify-content: flex-end;
+				cursor: pointer;
+				z-index: 50;
+
+				.order__menu {
+					width: 50%;
+					height: 100vh;
+					background-color: $white-off;
+					list-style: none;
+					overflow: hidden;
+					cursor: pointer;
+
+					.filter__details-container {
+						width: 100%;
+
+						.order__menu-link {
+							width: 100%;
+							display: block;
+							height: 3rem;
+							background-color: #ffff;
+							font-size: 1.4rem;
+							display: flex;
+							align-items: center;
+							padding-left: 1rem;
+							margin-bottom: 3px;
+							border-top: 3px solid $white-off;
+							border-bottom: 3px solid $white-off;
+						}
+						.order__submenu {
+							width: 100%;
+							list-style: none;
+							padding: 0;
+							margin: 0;
+							background-color: #ffff;
+
+							.order__submenu-link {
+								display: block;
+								width: 100%;
+								height: 3rem;
+								display: flex;
+								align-items: center;
+								font-size: 1.2rem;
+								padding-left: 3rem;
+								transition: all 0.3s;
+
+								&:hover {
+									background-color: $white-off;
+									font-weight: 700;
+									transition: all 0.3s;
+								}
+							}
+						}
+					}
+				}
+			}
+			.activeFilterType {
+				display: flex;
+			}
+		}
+	}
+}

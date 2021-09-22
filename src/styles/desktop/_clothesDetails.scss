@@ -1,0 +1,38 @@
+.details__container {
+	display: flex;
+	max-width: 1240px;
+	margin: 0 auto;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	height: 60rem;
+
+	.details__container-img {
+		width: 60%;
+		display: flex;
+		margin: 0 auto;
+	}
+	@media (min-width: 1240px) {
+		.details__container-img {
+			margin-left: 12rem;
+		}
+	}
+	.details__text {
+		width: 40%;
+
+		.characters {
+			margin-top: 3rem;
+		}
+		.btn__add-car {
+			margin-top: 4rem;
+		}
+
+		.btn__back {
+			bottom: 0px;
+		}
+	}
+	@media (min-width: 1240px) {
+		.details__text {
+			margin-right: 12rem;
+		}
+	}
+}

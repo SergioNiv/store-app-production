@@ -1,0 +1,157 @@
+.details__container {
+	width: 100%;
+	background-color: #ffff;
+
+	.details__container-img {
+		width: 80%;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		margin: 0 auto;
+		max-width: 450px;
+
+		.details__img {
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+	.details__text {
+		width: 95%;
+		margin: 0 auto;
+		position: relative;
+
+		.details__name {
+			display: block;
+			font-size: 1.5rem;
+			margin-top: 2.5rem;
+		}
+		.details__price {
+			display: block;
+			font-size: 2.5rem;
+			font-weight: 600;
+			margin-top: 2rem;
+		}
+		.details__shipping {
+			display: block;
+			font-size: 1.2rem;
+			margin-top: 2.5rem;
+		}
+		.details__size-title {
+			display: block;
+			font-size: 1.2rem;
+			margin-top: 1.5rem;
+		}
+		.details__size {
+			width: 25rem;
+			display: flex;
+
+			.size {
+				width: 5rem;
+				height: 2rem;
+				display: block;
+				background-color: #ffff;
+				border: 3px solid $white-off;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin-right: 8px;
+				margin-top: 1rem;
+				border-radius: 4px;
+				transition: all 0.2s;
+
+				&:hover {
+					background-color: $red-off;
+					border: 3px solid $red_off;
+					color: #fff;
+					cursor: pointer;
+				}
+			}
+			.size-active {
+				background-color: $red-off;
+				color: white;
+				border: 3px solid $red-off;
+			}
+		}
+
+		.details__size-result {
+			width: 25rem;
+			display: flex;
+
+			.size__result {
+				width: 4rem;
+				height: 2rem;
+				background-color: $white-off;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin-right: 8px;
+				margin-top: 4px;
+				border: 3px solid $white-off;
+			}
+		}
+		.characters {
+			width: 100%;
+			margin-top: 2rem;
+
+			.characters__title {
+				display: block;
+				font-size: 1.5rem;
+				font-weight: 600;
+			}
+
+			.charaters__list {
+				width: 50%;
+				list-style: none;
+				font-size: 1.2rem;
+				padding: 0;
+				margin: 0;
+				margin-top: 1rem;
+				margin-left: 1rem;
+				background-color: $white-off;
+				padding: 1rem;
+
+				.characters__list-item {
+					margin-bottom: 1rem;
+
+					.weight {
+						font-weight: 600;
+					}
+				}
+			}
+		}
+		.btn__add-car {
+			width: 100%;
+			margin-top: 1.5rem;
+			background-color: $red-off;
+			color: #ffff;
+			border-radius: 4px;
+			border: none;
+			height: 4rem;
+			font-size: 1.4rem;
+			margin-bottom: 10px;
+			transition: background-color 0.3s;
+			cursor: pointer;
+
+			&:hover {
+				background-color: $red_ligth;
+			}
+		}
+		.disabled {
+			background-color: $red_ligth;
+			cursor: default;
+		}
+		.btn__back {
+			margin-top: 0.5rem;
+			width: 30%;
+			height: 2.5rem;
+			background-color: $white-off;
+			color: black;
+			border-radius: 4px;
+			border: none;
+			position: absolute;
+			bottom: 60px;
+			right: 0;
+			cursor: pointer;
+		}
+	}
+}

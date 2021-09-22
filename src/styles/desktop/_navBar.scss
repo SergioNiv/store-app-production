@@ -1,0 +1,69 @@
+.nav__container {
+	.nav {
+		.nav__search-desktop {
+			display: flex;
+			padding-right: 5px;
+		}
+		.nav__btn-search {
+			display: none;
+
+			.fa-search {
+				font-size: 2.2rem;
+			}
+		}
+
+		.nav__btn-store {
+			border-right: none;
+			transition: background-color 0.3s;
+			&:hover {
+				background-color: $red_ligth-5;
+			}
+		}
+
+		.nav__login {
+			border-right: none;
+			transition: background-color 0.3s;
+			&:hover {
+				background-color: $red_ligth-5;
+			}
+		}
+
+		.nav__categories {
+			width: 18%;
+
+			.nav__cat-text {
+				display: flex;
+			}
+
+			/*Menu Icon */
+
+			.btn__menu {
+				flex-direction: column;
+				transition: background-color 0.3s;
+
+				&:hover {
+					background-color: $red_ligth-5;
+				}
+
+				.menu-activador {
+					margin-top: 0.3rem;
+					padding-bottom: 0rem;
+				}
+			}
+
+			.nav__menu {
+				width: 300%;
+
+				.nav__menu-link {
+					transition: background-color 0.3s;
+					&:hover {
+						background-color: $red_ligth-5;
+					}
+				}
+			}
+		}
+	}
+	.nav__search {
+		display: none;
+	}
+}

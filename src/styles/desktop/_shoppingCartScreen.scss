@@ -1,0 +1,21 @@
+.cart__container {
+	display: flex;
+
+	.cart__resumen {
+		width: 40%;
+
+		.container__resumen {
+			.cart__btn-container-desktop {
+				display: block;
+			}
+		}
+	}
+
+	.cart__resumen-disabled {
+		width: 100%;
+	}
+
+	.cart__btn-container {
+		display: none;
+	}
+}
